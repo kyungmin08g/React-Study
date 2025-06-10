@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5", // TypeScript 코드를 ES5 JavaScript로 컴파일 | 구형 브라우저 호환성을 위해 설정
     "lib": [
-      "dom",
-      "dom.iterable",
-      "es6"
+      "dom", // DOM API (document, window 등)
+      "dom.iterable", // DOM의 반복 가능한 객체들
+      "es6" // ES6 문법과 API
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "allowJs": true, // .js와 .ts 파일을 함께 사용 가능
+    "skipLibCheck": true, // 라이브러리 파일(.d.ts)의 타입 검사를 건너뜀
+    "esModuleInterop": true, // CommonJS 모듈을 ES6 모듈처럼 import 가능
+    "allowSyntheticDefaultImports": true, // default export가 없는 모듈도 default import 가능
+    "strict": true, // 모든 엄격한 타입 검사 옵션을 활성화
+    "forceConsistentCasingInFileNames": true, // 파일명의 대소문자를 일관되게 강제
+    "noFallthroughCasesInSwitch": true, // switch문에서 break 없는 case를 에러로 처리
+    "module": "esnext", // 최신 ES 모듈 시스템 사용
+    "moduleResolution": "node", // Node.js 방식으로 모듈을 찾음
+    "resolveJsonModule": true, // JSON 파일을 모듈로 import 가능
+    "isolatedModules": true, // 각 파일을 독립적인 모듈로 처리
+    "noEmit": true, // JavaScript 파일을 생성 X | 타입 검사만 수행
+    "jsx": "react-jsx" // React 17+의 새로운 JSX 변환 방식 사용
   },
   "include": [
-    "src"
+    "src" // src 폴더 내의 모든 파일을 컴파일 대상에 포함
   ]
 }
