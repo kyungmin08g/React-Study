@@ -17,7 +17,7 @@ export default function Login() {
             <Input type="password" message="비밀번호를 입력하세요." />
           </div>
           <div className="button-box">
-            <Button title="Login" />
+            <Button title="Login" event=""/>
           </div>
         </form>
       </div>
