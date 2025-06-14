@@ -1,6 +1,6 @@
 import "../styles/Login.css";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "../components/Input";
+import Button from "../components/Button";
 import { useParams } from "react-router-dom";
 
 export default function SignIn() {
