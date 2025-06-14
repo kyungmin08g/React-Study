@@ -1,8 +1,11 @@
 import "../styles/Login.css";
 import Input from "./Input";
 import Button from "./Button";
+import { useParams } from "react-router-dom";
 
 export default function SignIn() {
+  const { id, page } = useParams();
+
   return (
     <div className="container-main">
       <div className="container">
@@ -20,6 +23,7 @@ export default function SignIn() {
             <Button title="Sign In" />
           </div>
         </form>
+        <p>ID: { id }, Page: { page }</p>
       </div>
     </div>
   );
